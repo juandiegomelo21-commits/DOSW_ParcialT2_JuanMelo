@@ -43,7 +43,7 @@
 |:-------|
 | Entrada |
 
-
+**DATOS DE SALIDA**
 | Nombre | Descripción | Tipo de campo | Reglas / Aplicación | Obligatorio |
 |:-------|:------------|:--------------|:--------------------|:------------|
 | ID del torneo | Identificador único del torneo creado | Texto (UUID) | Generado automáticamente por el sistema | Sí |
