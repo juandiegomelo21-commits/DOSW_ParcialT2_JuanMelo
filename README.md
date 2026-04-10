@@ -43,7 +43,7 @@
 **EJEMPLO DE ENTRADA**
 | Descripción |
 |:-------|
-| Entrada |
+| 100,juan,pepito@gmail.com, ******, img.pjg, conductor,001|
 
 **DATOS DE SALIDA**
 | Nombre | Descripción | Tipo de campo | Reglas / Aplicación | Obligatorio |
@@ -65,13 +65,13 @@
 
 ---
 
-### RF01: Registro de Torneo
+### RF02: Registro de Vehiculo
 
 | Campo                     | Detalle |
 |:--------------------------|:--------|
-| **Verbo**                | GET |
+| **Verbo**                | POST |
 | **Idenpotente**                | NO |
-| **Razón**           | El sistema debe permitir al organizador crear un nuevo torneo proporcionando la información básica requerida (fechas, cantidad de equipos, costo). El torneo se crea inicialmente en estado 
+| **Razón**           | Cuando se llama cada vez se crea un nuevo carro
 | **Rol**             |usuario|
 
 
