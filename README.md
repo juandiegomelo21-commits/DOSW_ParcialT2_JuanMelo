@@ -48,21 +48,20 @@
 **DATOS DE SALIDA**
 | Nombre | Descripción | Tipo de campo | Reglas / Aplicación | Obligatorio |
 |:-------|:------------|:--------------|:--------------------|:------------|
-| ID del torneo | Identificador único del torneo creado | Texto (UUID) | Generado automáticamente por el sistema | Sí |
-| Estado | Estado inicial del torneo | Texto (enum) | Siempre se retorna como "Borrador" al crear | Sí |
+| estado de registro | exitoso o no | Texto (UUID) | tiene que ser unico | Sí |
 | Mensaje de confirmación | Notificación de creación exitosa | Texto | Se muestra al organizador tras el guardado | Sí |
 
 **EJEMPLO DE SALIDA**
 | Descripción |
 |:-------|
-| Salida |
+| registro exitoso |
 
 
 **REGLAS DE NEGOCIO Y VALIDACIONES**
 | Sección | Detalle |
 | :--- | :--- |
-| **Reglas de Negocio** | <ul><li>1) El torneo se crea siempre en estado **Borrador** o en **Activo** si el administrador lo define. También puede pasar a *In Progress*, *Completed* o *Deleted*.</li><li>2) Transiciones permitidas: **Borrador → Activo → En Progreso → Finalizado**.</li><li>3) No se permiten transiciones inversas ni saltar estados.</li><li>4) La fecha final debe ser estrictamente posterior a la inicial.</li><li>5) Cantidad de equipos: número par $\ge 4$.</li><li>6) Un torneo **Finalizado** es de solo lectura.</li></ul> |
-|**validaciones imput**| adsadads|
+| **Reglas de Negocio** | el usuario no se puede registrar 2 veces |
+|**validaciones imput**| validacion numerica de id y campos string |
 
 ---
 
